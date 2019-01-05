@@ -1,0 +1,59 @@
+<div class="nicekara-navbar mat-elevation-z6">
+    <mat-grid-list cols="4" rowHeight="3.125rem">
+
+        <mat-grid-tile [colspan]="1" [rowspan]="1" class="nicekara-navbar__button-area">
+            <!--For large screen-->
+            <a mat-button isIconButton="true" routerLink="/home" fxShow fxHide.xs="true" fxHide.lg="false">
+                <span>Trang chủ</span>
+            </a>
+            <a mat-button routerLink="/contact" fxShow fxHide.xs="true" fxHide.lg="false">
+                <span>Liên hệ</span>
+            </a>
+            <!-- End for large screen-->
+
+            <!-- For small screen-->
+            <button mat-icon-button [matMenuTriggerFor]="menu" fxShow fxHide.md="true" fxHide.sm="true" fxHide.xl="true" fxHide.xs="false" fxHide.lg="true">
+                <mat-icon >menu</mat-icon>
+            </button>
+            <mat-menu #menu="matMenu" fxShow fxHide.md="true" fxHide.sm="true" fxHide.xs="false" fxHide.xl="true" fxHide.lg="true">
+                <button mat-menu-item routerLink="/home">
+                    <mat-icon>home</mat-icon>
+                    <span>Trang chủ</span>
+                </button>
+                <button mat-menu-item routerLink="/contact">
+                    <mat-icon>info</mat-icon>
+                    <span>Liên hệ</span>
+                </button>
+            </mat-menu>
+            <!--End for small screem-->
+
+        </mat-grid-tile>
+
+        <mat-grid-tile [colspan]="2" [rowspan]="1" class="nicekara-navbar__search-area">
+            <div class="nicekara-navbar__search-area__form-field">
+                <input type="tel" class="nicekara-navbar__search-area__form-field__input" placeholder="Nhập tên bài hát">
+            </div>
+        </mat-grid-tile>
+
+        <mat-grid-tile [colspan]="1" [rowspan]="1" class="nicekara-navbar__account-area">
+            <!--For large screen-->
+            <a mat-button isIconButton="true" routerLink="/help" fxShow fxHide.xs="true"  fxHide.lg="false">
+                <span>Hướng dẫn</span>
+            </a>
+            <a mat-button isIconButton="true" routerLink="/profile" fxShow fxHide.xs="true" fxHide.lg="false">
+                <span>Tài khoản</span>
+            </a>
+            <!--End For large screen-->
+
+            <!--For small screen-->
+            <button mat-icon-button routerLink="/help" fxShow fxHide.xs="false" fxHide.xl="true" fxHide.sm="true" fxHide.md="true" fxHide.lg="true">
+                <mat-icon >help</mat-icon>
+            </button>
+            <button mat-icon-button routerLink="/profile" fxShow fxHide.xs="false" fxHide.xl="true" fxHide.sm="true" fxHide.md="true" fxHide.lg="true">
+                <mat-icon >perm_identity</mat-icon>
+            </button>
+            <!--End for small screen-->
+        </mat-grid-tile>
+
+    </mat-grid-list>
+</div>

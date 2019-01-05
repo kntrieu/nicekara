@@ -1,0 +1,84 @@
+<div class="nicekara-home">
+  <mat-grid-list cols="4" class="nicekara-home__player">
+    <mat-grid-tile [colspan]="1" [rowspan]="1" class="nicekara-home__player__features">
+      <!-- lage conntent-->
+      <div class="features-list">
+        <div class="features-list__item create-remote" matTooltip="Nhấn vào để tạo remote" matTooltipPosition="after">Tạo
+          remote</div>
+        <div class="features-list__item create-playlist" matTooltip="Nhấn vào để tạo danh sách nhạc" matTooltipPosition="after">Tạo
+          danh sách nhạc</div>
+        <div class="features-list__item manage-remotes" matTooltip="Vào trang quản lý remotes" matTooltipPosition="after">Quản
+          lý remote</div>
+      </div>
+      <!-- end lage conntent-->
+    </mat-grid-tile>
+    <mat-grid-tile [colspan]="2" [rowspan]="1" class="nicekara-home__player__col2">
+
+
+      <youtube-player class="youtube-player" [videoId]="youtubeId" 
+        (ready)="savePlayer($event)"
+        (change)="onStateChange($event)">
+      </youtube-player>
+
+    </mat-grid-tile>
+    <mat-grid-tile [colspan]="1" [rowspan]="1" class="nicekara-home__player__playlist">
+      <div class="playlist-filter">
+        <mat-form-field class="">
+          <input matInput placeholder="Tìm bài hát trong playlist" value="" autocomplete="off">
+        </mat-form-field>
+      </div>
+      <div class="playlist-list">
+        <mat-accordion>
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                Còn thương rau đắng mọc sau hè
+              </mat-panel-title>
+              <mat-panel-description>
+                Như Quỳnh
+              </mat-panel-description>
+            </mat-expansion-panel-header>
+            <button mat-icon-button color="primary">
+                <button mat-raised-button color="primary" style="margin-right: 5px">Phát</button>
+                <button mat-raised-button color="accent" style="margin-right: 5px">Tạm dừng</button>
+                <button mat-raised-button color="warn" style="margin-right: 5px">Dừng</button>
+            </button>
+          </mat-expansion-panel>
+
+          <mat-expansion-panel>
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  Còn thương rau đắng mọc sau hè
+                </mat-panel-title>
+                <mat-panel-description>
+                  Như Quỳnh
+                </mat-panel-description>
+              </mat-expansion-panel-header>
+              <button mat-icon-button color="primary">
+                  <button mat-raised-button color="primary" style="margin-right: 5px">Phát</button>
+                  <button mat-raised-button color="accent" style="margin-right: 5px">Tạm dừng</button>
+                  <button mat-raised-button color="warn" style="margin-right: 5px">Dừng</button>
+              </button>
+            </mat-expansion-panel>
+
+            <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                  <mat-panel-title>
+                    Còn thương rau đắng mọc sau hè
+                  </mat-panel-title>
+                  <mat-panel-description>
+                    Như Quỳnh
+                  </mat-panel-description>
+                </mat-expansion-panel-header>
+                <button mat-icon-button color="primary">
+                    <button mat-raised-button color="primary" style="margin-right: 5px">Phát</button>
+                    <button mat-raised-button color="accent" style="margin-right: 5px">Tạm dừng</button>
+                    <button mat-raised-button color="warn" style="margin-right: 5px">Dừng</button>
+                </button>
+              </mat-expansion-panel>
+        </mat-accordion>
+
+      </div>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>

@@ -1,0 +1,77 @@
+.nicekara-home .nicekara-home__player .nicekara-home__player__features,
+.nicekara-home .nicekara-home__player .nicekara-home__player__playlist {
+    background-image: url('https://www.setaswall.com/wp-content/uploads/2017/04/Material-Wallpaper-4-1920x1080.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.nicekara-home .nicekara-home__player .nicekara-home__player__col2 {
+    background-color: antiquewhite;
+}
+
+.nicekara-home .nicekara-home__player .nicekara-home__player__col2 .youtube-player iframe {
+    width: 100%;
+    height: stretch;
+}
+
+.features-list {
+    width: 100%;
+    margin-right: 5px;
+}
+
+.features-list .features-list__item {
+    display: block;
+    height: 50px;
+    width: 80%;
+    border-radius: 5px;
+    margin: auto;
+    text-align: center;
+    line-height: 50px;
+    margin-bottom: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+.features-list__item.create-remote {
+    background-color: #2196f3;
+}
+
+.features-list__item.create-playlist {
+    background-color: #f8bbd0;
+}
+
+.features-list__item.manage-remotes {
+    background-color: #7986cb;
+}
+
+
+.features-list__item:hover{
+    cursor: pointer;
+    filter: brightness(105%);
+}
+
+.features-list__item:active{
+    cursor: pointer;
+    filter: brightness(90%);
+}
+
+.nicekara-home__player__playlist .playlist-filter {
+    width: 90%;
+    margin: auto;
+    top: 10px;
+    position: absolute;
+    display: block;
+    margin-bottom: 30px;
+}
+
+.nicekara-home__player__playlist .playlist-list {
+    width: 90%;
+    margin: auto;
+    position: absolute;
+    display: block;
+    top: 80px;
+}
+
+.nicekara-home__player__playlist .playlist-filter .mat-form-field {
+    display: block;
+}

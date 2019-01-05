@@ -1,0 +1,30 @@
+.nicekara-navbar {
+    width: 100%;
+    position: fixed;
+    height: 3.125rem;
+    background-color: #3f51b5;
+    top: 0; left: 0;
+    color: white;
+}
+
+.nicekara-navbar__search-area__form-field {
+    width: 100% !important;
+    height: 2.1875rem;
+}
+
+.nicekara-navbar__search-area__form-field__input {
+    width: 90%;
+    margin: auto;
+    height: -moz-available;          /* WebKit-based browsers will ignore this. */
+    height: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
+    height: stretch;
+    border-radius: 0.3125rem;
+    border: none;
+    font-size: 1rem;
+    padding-left: 0.625rem;
+    color: #0093c4;
+}
+
+.nicekara-navbar__search-area__form-field__input:focus{
+    outline: none;
+}
